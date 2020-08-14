@@ -12,10 +12,18 @@ yargs.command({
             describe: 'Note title',
             demandOption: true,
             type: 'string',
+        },
+        body: {
+           describe: 'Body of note',
+           demandOption: true,
+           type: 'string',
         }
     },
     handler: function(argv){
-        console.log(chalk.green('New note added'), argv);
+        console.log(chalk.green('New note added\n'))
+        console.log(`${chalk.green.bold("\tTitle\t\tBody")}`);
+        console.log("=========================================");
+        console.log( chalk.yellow.bold("\t"+argv.title+"\t\t"), argv.body);
     }
 });
 
@@ -24,8 +32,8 @@ yargs.command({
     'describe':'Deletes an existing note',
     builder: {
         title: {
-            describe: 'Note title'
-        }
+            describe: 'Note title',
+        },
     },
     handler: function(argv){
         console.log(chalk.green('Removed existing note'));
