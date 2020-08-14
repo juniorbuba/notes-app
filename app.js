@@ -19,5 +19,5 @@ if(command === "add"){
 }else if(command === "delete"){
     console.log("Deleting note");
 }else{
-    console.log(chalk.red(`Unrecognized command\nAvailable Commands are add & delete`));
+    console.log(`Unrecognized command\nAvailable Commands are add & delete`);
 }
