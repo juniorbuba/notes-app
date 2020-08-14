@@ -12,7 +12,7 @@ const notes = require('./notes.js');
 // console.log(chalk.red.underline('Connection failed'));
 
 // console.log(chalk.green(process.argv[2]));
-
+console.log(process.argv);
 const command = process.argv[2];
 if(command === "add"){
     console.log("Adding note");
