@@ -1,4 +1,4 @@
-const filesystem = require('fs');
+const fs = require('fs');
 const yargs = require('yargs');
 const chalk = require('chalk');
 const notes = require('./notes.js');
@@ -24,6 +24,8 @@ yargs.command({
         console.log(`${chalk.green.bold("\tTitle\t\tBody")}`);
         console.log("=========================================");
         console.log( chalk.yellow.bold("\t"+argv.title+"\t\t"), argv.body);
+        fs.writeFileSync("notes.txt",`${argv.title} >>>>>>>> ${argv.body}`);
+        console.log("content written to file synchronously");
     }
 });
 
@@ -36,7 +38,7 @@ yargs.command({
         },
     },
     handler: function(argv){
-        console.log(chalk.green('Removed existing note'));
+        console.log(chalk.green('Removed existing note'), argv.title);
     }
 });
 
