@@ -5,6 +5,26 @@ A small ```Nodejs``` application that allows the user take notes using the Commm
 
 The only required external node module needed is ```yargs``` and ```chalk```, you can clone and run ```npm install``` to install these packages. I recommend also having Nodemon installed.
 
-Available commands to use the ```notes-app``` are: ```add``` & ```delete```(for now)
+Available commands to use the ```notes-app``` are: ```add```, ```delete``` & ```list```
 
-Note: Commands are in all lower case.
+# Usage
+
+* ```add```
+
+-Requires two flags, ```--title``` and ```--body```
+
+Example: node app add --title='Coding' --body='Refactor all functions to arrow functions'
+
+* ```delete```
+
+-Requires one flag only, ```--title```
+
+Example: node app delete --title='Coding'
+
+* ```list```
+
+-Requires no flags at all
+
+Example: node app list
+
+        Note: Commands are in all lower case.
