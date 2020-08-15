@@ -37,10 +37,12 @@ yargs.command({
     builder: {
         title: {
             describe: 'Note title',
+            demandOption: true, 
+            type: 'string'
         },
     },
     handler: function(argv){
-        console.log(chalk.green('Removed existing note'), argv.title);
+        notes.deleteNote(argv.title);
     }
 });
 
