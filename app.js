@@ -20,12 +20,14 @@ yargs.command({
         }
     },
     handler: function(argv){
-        console.log(chalk.green('New note added\n'))
-        console.log(`${chalk.green.bold("\tTitle\t\tBody")}`);
-        console.log("=========================================");
-        console.log( chalk.yellow.bold("\t"+argv.title+"\t\t"), argv.body);
-        fs.appendFileSync("notes.txt",`${argv.title} >>>>>>>> ${argv.body+"\n"}`);
-        console.log("content written to file synchronously");
+        // console.log(chalk.green('New note added\n'))
+        // console.log(`${chalk.green.bold("\tTitle\t\tBody")}`);
+        // console.log("=========================================");
+        // console.log( chalk.yellow.bold("\t"+argv.title+"\t\t"), argv.body);
+        // fs.appendFileSync("notes.txt",`${argv.title} >>>>>>>> ${argv.body+"\n"}`);
+        // console.log("content written to file synchronously");
+        //calling function from notes
+        notes.addNote(argv.title, argv.body);
     }
 });
 
