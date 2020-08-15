@@ -58,7 +58,7 @@ yargs.command({
     'command':'list',
     'describe':'Lists all existing notes',
     handler: function(){
-        console.log(chalk.green('Listed all existing notes'));
+        notes.listNotes();
     }
 });
 
