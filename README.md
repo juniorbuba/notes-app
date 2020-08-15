@@ -7,4 +7,4 @@ The only required external node module needed is ```yargs``` and ```chalk```, yo
 
 Available commands to use the ```notes-app``` are: ```add``` & ```delete```(for now)
 
-Note: all lower case.
+Note: Commands are in all lower case.
