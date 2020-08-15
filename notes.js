@@ -58,6 +58,7 @@ const deleteNote = function(title){
     const listNotes = function(){
         console.log(chalk.yellow('Listing all notes...'));
         console.log(loadNotes());
+        console.log(chalk.green('Done Listing'));
     }
 
 module.exports = {
