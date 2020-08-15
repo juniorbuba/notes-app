@@ -54,9 +54,15 @@ const deleteNote = function(title){
         console.log(chalk.red('No note removed'));
     }
 }   
+    //refactor to arrow fxn later
+    const listNotes = function(){
+        console.log(chalk.yellow('Listing all notes...'));
+        console.log(loadNotes());
+    }
 
 module.exports = {
     notes: notes,
     addNote: addNote,
-    deleteNote: deleteNote
+    deleteNote: deleteNote,
+    listNotes: listNotes
 };
