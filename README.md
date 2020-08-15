@@ -3,7 +3,7 @@
 
 A small ```Nodejs``` application that allows the user take notes using the Commmand Line Interface.
 
-The only required external node modules needed are ```yargs``` and ```chalk```, you can clone and run ```npm install``` to install these packages.
+The only required external node modules needed are ```yargs``` and ```chalk```. To run this application, clone this repository and run ```npm install``` to install the required dependencies.
 
 Available commands to use ```notes-app``` are: ```add```, ```delete```, ```list```, ```read```, ```version``` & ```help```
 
