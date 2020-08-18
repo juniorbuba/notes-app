@@ -11,33 +11,42 @@ Available commands to use ```notes-app``` are: ```add```, ```delete```, ```list`
 
 # Usage
 
+Available Commands
+1 add
+2 delete
+3 list
+4 read
+5 help
+6 version
+7 author
+
 * ```add```
 
 -Requires two flags, ```--title``` and ```--body```
 
-        Example: node app add --title='Coding' --body='Refactor all functions to arrow functions'
+        Example: node app add --title='Immediate Exfil' --body='Alpha Chalk, this is Whiskey Echo Bravo requesting immediate exfil'
 
 * ```delete```
 
 -Requires one flag only, ```--title```
 
-        Example: node app delete --title='Coding'
+        Example: node app delete --title='Social Distancing'
+
+* ```read```
+
+-Requires one flag only, ```--title```
+
+        Example: node app read --title='Excavating Mars'
 
 * ```list```
-
--Requires no flags at all
 
         Example: node app --list
 
 * ```version```
 
--Requires no flags at all
-
         Example: node app --version
 
 * ```help```
-
--Requires no flags at all
 
         Example: node app --help
 
