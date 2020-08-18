@@ -12,13 +12,22 @@ Available commands to use ```notes-app``` are: ```add```, ```delete```, ```list`
 # Usage
 
 Available Commands
-1 add
-2 delete
-3 list
-4 read
-5 help
-6 version
-7 author
+
+1 ```add```
+
+2 ```delete```
+
+3 ```list```
+
+4 ```read```
+
+5 ```help```
+
+6 ```version```
+
+7 ```author```
+
+## Examples
 
 * ```add```
 
