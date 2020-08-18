@@ -7,8 +7,6 @@ The only required external node modules needed are ```yargs``` and ```chalk```.
 
 To run this application, clone this repository and run ```npm install``` to install the required dependencies.
 
-Available commands to use ```notes-app``` are: ```add```, ```delete```, ```list```, ```read```, ```version``` & ```help```
-
 # Usage
 
 Available Commands
