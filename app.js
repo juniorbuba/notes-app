@@ -2,6 +2,7 @@ const fs = require('fs');
 const yargs = require('yargs');
 const chalk = require('chalk');
 const notes = require('./notes.js');
+const moh = require('./author');
 const { demandOption } = require('yargs');
 
 yargs.command({
@@ -20,11 +21,6 @@ yargs.command({
         }
     },
     handler: function(argv){
-        // console.log(chalk.green('New note added\n'))
-        // console.log( chalk.yellow.bold("\t"+argv.title+"\t\t"), argv.body);
-        // fs.appendFileSync("notes.txt",`${argv.title} >>>>>>>> ${argv.body+"\n"}`);
-        // console.log("content written to file synchronously");
-        //calling function from notes
         notes.addNote(argv.title, argv.body);
     }
 });
@@ -64,6 +60,14 @@ yargs.command({
     'describe':'Lists all existing notes',
     handler: function(){
         notes.listNotes();
+    }
+});
+
+yargs.command({
+    'command':'author',
+    'describe':'About the author',
+    handler: function(){
+        moh.aboutMoh();
     }
 });
 
