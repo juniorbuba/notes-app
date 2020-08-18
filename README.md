@@ -41,8 +41,6 @@ Available commands to use ```notes-app``` are: ```add```, ```delete```, ```list`
 
         Example: node app --help
 
-        Note: Commands are in all lower case.
-
 * And finally the last but not the least, ```author```
 
 -Requires no flags at all
