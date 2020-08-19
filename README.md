@@ -62,3 +62,5 @@ Available Commands
         Example: node app author
 
         Note: Commands are in all lower case.
+
+Logo was made using [Logomakr](https://logomakr.com)
