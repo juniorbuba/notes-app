@@ -1,5 +1,5 @@
 
-![image of note and pen](note.png)
+![image of note and cli](note.png)
 
 A small ```Nodejs``` application that allows the user take notes using the Commmand Line Interface.
 
