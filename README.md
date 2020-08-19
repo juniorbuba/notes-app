@@ -1,5 +1,5 @@
-# Notes-app 
-![image of note and pen](note.jpg)
+
+![image of note and pen](note.png)
 
 A small ```Nodejs``` application that allows the user take notes using the Commmand Line Interface.
 
